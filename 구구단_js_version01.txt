@@ -1,0 +1,15 @@
+while(true){
+    var 숫자1 = Math.floor(Math.random()*9+1);
+    var 숫자2 = Math.floor(Math.random()*9+1);
+    var 결과 = 숫자1 * 숫자2;
+    var 조건 = true;
+    while(조건){
+        var 정답 = Number(prompt(String(숫자1) +' * '+ String(숫자2) + '= ?'));
+        if(결과 === 정답){
+            alert('정답!');
+            조건 = false;
+        }
+        else
+            alert('오답 다시 입력하세요');
+    }
+}
